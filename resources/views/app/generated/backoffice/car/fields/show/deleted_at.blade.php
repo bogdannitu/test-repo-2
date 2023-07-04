@@ -1,0 +1,1 @@
+{{ $car->deleted_at }}
