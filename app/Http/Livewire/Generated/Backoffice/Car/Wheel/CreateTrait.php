@@ -1,1 +1,1 @@
-stubs.crud.controller.livewire.traits.createTrait.php
+stubs.crud.controller.livewire.traits.createTraitxx.php
