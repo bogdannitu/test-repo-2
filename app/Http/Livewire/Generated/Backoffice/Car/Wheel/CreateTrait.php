@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Livewire\Generated\Backoffice\Car;
+    namespace App\Http\Livewire\Generated\Backoffice\Car\Wheel;
 
 use App\Models\Car;
 use Illuminate\Database\Eloquent\Collection;
