@@ -1,0 +1,59 @@
+.table-fieldset {
+    @apply py-6;
+    @screen lg {
+        @apply flex;
+    }
+    &__legend {
+        @apply mb-4;
+        @screen lg {
+            float: left;
+            margin-right: 30px;
+            min-width: 300px;
+            width: 50%;
+        }
+    }
+    &:not(:last-of-type) {
+        @apply border-b border-gray-300;
+    }
+}
+.show-table {
+    @apply border-x border-gray-200 text-sm;
+    thead {
+        tr {
+            th {
+                @apply p-5;
+            }
+        }
+    }
+    tbody {
+        tr {
+            th {
+                @apply font-semibold p-5;
+            }
+            td {
+                @apply p-5;
+            }
+            &:nth-child(2n+2) {
+                @apply bg-gray-100;
+            }
+        }
+    }
+}
+
+.pagination {
+    button {
+        &:hover {
+            @apply bg-gray-100;
+        }
+    }
+    span[aria-current="page"] {
+        span {
+            @apply bg-primary-400 text-white;
+        }
+    }
+    span[aria-disabled="true"] {
+        span {
+            @apply opacity-30;
+        }
+    }
+}
