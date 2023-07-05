@@ -5,12 +5,18 @@
             
             <div class="flex-1 -mx-2">
                 @includeIf('app.backoffice.car.create.fieldset.default-fieldset-6.content_before')
-                                    @includeIf('app.backoffice.car.fields.create.name_before')
+                                    @includeIf('app.backoffice.car.fields.create.color_before')
                     @includeFirst([
-                                'app.backoffice.car.fields.create.name',
-                                'app.generated.backoffice.car.fields.create.name'
+                                'app.backoffice.car.fields.create.color',
+                                'app.generated.backoffice.car.fields.create.color'
                             ])
-                    @includeIf('app.backoffice.car.fields.create.name_after')
+                    @includeIf('app.backoffice.car.fields.create.color_after')
+                                    @includeIf('app.backoffice.car.fields.create.size_before')
+                    @includeFirst([
+                                'app.backoffice.car.fields.create.size',
+                                'app.generated.backoffice.car.fields.create.size'
+                            ])
+                    @includeIf('app.backoffice.car.fields.create.size_after')
                                 @includeIf('app.backoffice.car.create.fieldset.default-fieldset-6.content_after')
             </div>
 

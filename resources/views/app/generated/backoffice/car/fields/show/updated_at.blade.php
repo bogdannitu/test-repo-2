@@ -1,1 +1,0 @@
-{{ $car->updated_at }}
