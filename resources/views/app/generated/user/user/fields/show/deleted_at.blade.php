@@ -1,1 +1,0 @@
-{{ $user->deleted_at }}

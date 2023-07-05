@@ -1,1 +1,0 @@
-{{ $user->created_at }}
