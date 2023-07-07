@@ -1,1 +1,0 @@
-{{ $item->deleted_at }}
