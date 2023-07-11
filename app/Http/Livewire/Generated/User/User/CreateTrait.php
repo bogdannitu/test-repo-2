@@ -21,8 +21,8 @@ trait CreateTrait
 
     public function render()
     {
-        return view('livewire.generated.user.user.create');
-    }
+                    return view('livewire.generated.user.user.create');
+            }
 
     public function submit()
     {
