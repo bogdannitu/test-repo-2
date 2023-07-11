@@ -21,7 +21,7 @@ trait CreateTrait
 
     public function render()
     {
-                    return view('livewire.generated.backoffice.car.Wheel.create');
+                    return view('livewire.generated.backoffice.car.wheel.create');
             }
 
     public function submit()
