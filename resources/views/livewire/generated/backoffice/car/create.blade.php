@@ -1,4 +1,7 @@
 <x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">
+    backoffice.car.car
+    backoffice.car
+
                     @includeIf('app.backoffice.car.create.fieldset.default-fieldset-6.before')
         <fieldset>
 
