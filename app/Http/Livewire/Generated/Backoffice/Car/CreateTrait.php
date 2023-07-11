@@ -28,7 +28,8 @@ trait CreateTrait
     {
         $this->validate();
 
-        $this->car->save();
+                    $this->car->save();
+        
         
         return redirect()->route('laragen.admin.car.index');
     }

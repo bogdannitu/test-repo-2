@@ -28,7 +28,8 @@ trait CreateTrait
     {
         $this->validate();
 
-        $this->user->save();
+                    $this->user->save();
+        
         
         return redirect()->route('laragen.admin.users.index');
     }
