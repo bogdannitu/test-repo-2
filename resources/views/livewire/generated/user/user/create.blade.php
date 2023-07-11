@@ -1,7 +1,4 @@
 <x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">
-    user.car.user
-    user.user
-
                     @includeIf('app.user.user.create.fieldset.default-fieldset-5.before')
         <fieldset>
 
