@@ -17,6 +17,12 @@
                                 'app.generated.backoffice.car.wheel.fields.create.size'
                             ])
                     @includeIf('app.backoffice.car.wheel.fields.create.size_after')
+                                    @includeIf('app.backoffice.car.wheel.fields.create.car_car_id_before')
+                    @includeFirst([
+                                'app.backoffice.car.wheel.fields.create.car_car_id',
+                                'app.generated.backoffice.car.wheel.fields.create.car_car_id'
+                            ])
+                    @includeIf('app.backoffice.car.wheel.fields.create.car_car_id_after')
                                 @includeIf('app.backoffice.car.wheel.create.fieldset.default-fieldset-6.content_after')
             </div>
 
