@@ -4,7 +4,6 @@
 use Livewire\Component;
 use Livewire\WithPagination;
 
-use Livewire\Component;
     use App\Http\Livewire\Generated\Backoffice\Car\Wheel\IndexTrait;
 
 class Index extends Component
