@@ -48,7 +48,7 @@
                     @forelse($items as $item)
                         @includeIf('app.user.user.index.before_row', ['item' => $item])
                         <tr>
-                                                            @includeIf('app.user.user.fields.index.id_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.id_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -59,7 +59,7 @@
                                     @includeIf('app.user.user.fields.index.id_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.id_after_column')
-                                                            @includeIf('app.user.user.fields.index.name_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.name_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -70,7 +70,7 @@
                                     @includeIf('app.user.user.fields.index.name_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.name_after_column')
-                                                            @includeIf('app.user.user.fields.index.email_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.email_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -81,7 +81,7 @@
                                     @includeIf('app.user.user.fields.index.email_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.email_after_column')
-                                                            @includeIf('app.user.user.fields.index.email_verified_at_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.email_verified_at_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -92,7 +92,7 @@
                                     @includeIf('app.user.user.fields.index.email_verified_at_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.email_verified_at_after_column')
-                                                            @includeIf('app.user.user.fields.index.password_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.password_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -103,7 +103,7 @@
                                     @includeIf('app.user.user.fields.index.password_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.password_after_column')
-                                                            @includeIf('app.user.user.fields.index.created_at_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.created_at_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -114,7 +114,7 @@
                                     @includeIf('app.user.user.fields.index.created_at_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.created_at_after_column')
-                                                            @includeIf('app.user.user.fields.index.updated_at_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.updated_at_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -125,7 +125,7 @@
                                     @includeIf('app.user.user.fields.index.updated_at_after')
                                 </td>
                                 @includeIf('app.user.user.fields.index.updated_at_after_column')
-                                                            @includeIf('app.user.user.fields.index.deleted_at_before_column')
+                                                                                            @includeIf('app.user.user.fields.index.deleted_at_before_column')
                                 <td>
                                     @includeFirst(
                                         [

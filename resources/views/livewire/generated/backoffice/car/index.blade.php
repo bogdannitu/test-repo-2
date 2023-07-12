@@ -24,7 +24,7 @@
                     @forelse($items as $item)
                         @includeIf('app.backoffice.car.index.before_row', ['item' => $item])
                         <tr>
-                                                            @includeIf('app.backoffice.car.fields.index.id_before_column')
+                                                                                            @includeIf('app.backoffice.car.fields.index.id_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -35,40 +35,7 @@
                                     @includeIf('app.backoffice.car.fields.index.id_after')
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.id_after_column')
-                                                            @includeIf('app.backoffice.car.fields.index.created_at_before_column')
-                                <td>
-                                    @includeFirst(
-                                        [
-                                            'app.backoffice.car.fields.index.created_at',
-                                            'app.generated.backoffice.car.fields.index.created_at'
-                                        ]
-                                    )
-                                    @includeIf('app.backoffice.car.fields.index.created_at_after')
-                                </td>
-                                @includeIf('app.backoffice.car.fields.index.created_at_after_column')
-                                                            @includeIf('app.backoffice.car.fields.index.updated_at_before_column')
-                                <td>
-                                    @includeFirst(
-                                        [
-                                            'app.backoffice.car.fields.index.updated_at',
-                                            'app.generated.backoffice.car.fields.index.updated_at'
-                                        ]
-                                    )
-                                    @includeIf('app.backoffice.car.fields.index.updated_at_after')
-                                </td>
-                                @includeIf('app.backoffice.car.fields.index.updated_at_after_column')
-                                                            @includeIf('app.backoffice.car.fields.index.deleted_at_before_column')
-                                <td>
-                                    @includeFirst(
-                                        [
-                                            'app.backoffice.car.fields.index.deleted_at',
-                                            'app.generated.backoffice.car.fields.index.deleted_at'
-                                        ]
-                                    )
-                                    @includeIf('app.backoffice.car.fields.index.deleted_at_after')
-                                </td>
-                                @includeIf('app.backoffice.car.fields.index.deleted_at_after_column')
-                                                            @includeIf('app.backoffice.car.fields.index.name_before_column')
+                                                                                                                                                                                                                                                                                                        @includeIf('app.backoffice.car.fields.index.name_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -79,18 +46,7 @@
                                     @includeIf('app.backoffice.car.fields.index.name_after')
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.name_after_column')
-                                                            @includeIf('app.backoffice.car.fields.index.carWheels_car_id_before_column')
-                                <td>
-                                    @includeFirst(
-                                        [
-                                            'app.backoffice.car.fields.index.carWheels_car_id',
-                                            'app.generated.backoffice.car.fields.index.carWheels_car_id'
-                                        ]
-                                    )
-                                    @includeIf('app.backoffice.car.fields.index.carWheels_car_id_after')
-                                </td>
-                                @includeIf('app.backoffice.car.fields.index.carWheels_car_id_after_column')
-                                                        <td>
+                                                                                                                            <td>
                                 <div class="form-group">
                                     
                                     @if(!$hideDefaultActions)
