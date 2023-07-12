@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Livewire\Generated\Backoffice\Wheel;
+    namespace App\Http\Livewire\Generated\Backoffice\Car\Wheel;
 
 use App\Models\Wheel;
 use Illuminate\Http\RedirectResponse;

@@ -1,5 +1,5 @@
 <?php
-    namespace App\Http\Livewire\Generated\User\User;
+namespace App\Http\Livewire\Generated\User\User;
 
 use App\Models\User;
         use Illuminate\Database\Eloquent\Collection;
