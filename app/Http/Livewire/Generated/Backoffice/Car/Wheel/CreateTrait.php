@@ -1,5 +1,4 @@
 <?php
-    asd
     namespace App\Http\Livewire\Generated\Backoffice\Car\Wheel;
 
 use App\Models\Wheel;
