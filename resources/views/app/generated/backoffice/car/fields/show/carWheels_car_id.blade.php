@@ -1,1 +1,1 @@
-asd
+@livewire('app.backoffice.car.wheel.create', ['car' => car])
