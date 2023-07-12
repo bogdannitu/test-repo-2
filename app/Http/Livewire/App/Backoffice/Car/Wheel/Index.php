@@ -1,9 +1,11 @@
 <?php
-namespace App\Http\Livewire\App\Backoffice\Car;
+    namespace App\Http\Livewire\App\Backoffice\Car\Wheel;
 
 use Livewire\Component;
 use Livewire\WithPagination;
-use App\Http\Livewire\Generated\Backoffice\Car\IndexTrait;
+
+use Livewire\Component;
+    use App\Http\Livewire\Generated\Backoffice\Car\Wheel\IndexTrait;
 
 class Index extends Component
 {
