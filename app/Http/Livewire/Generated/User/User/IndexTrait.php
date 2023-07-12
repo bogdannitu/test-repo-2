@@ -19,10 +19,10 @@ trait IndexTrait
 
     public function render()
     {
-        return view('livewire.generated.user.user.index', [
-            'items' => $this->getQuery()
-        ]);
-    }
+                    return view('livewire.generated.user.user.index', [
+                'items' => $this->getQuery()
+            ]);
+            }
 
     protected function getQuery(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {

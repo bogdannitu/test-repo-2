@@ -19,10 +19,10 @@ trait IndexTrait
 
     public function render()
     {
-        return view('livewire.generated.backoffice.wheel.index', [
-            'items' => $this->getQuery()
-        ]);
-    }
+                    return view('livewire.generated.backoffice.car.wheel.index', [
+                'items' => $this->getQuery()
+            ]);
+            }
 
     protected function getQuery(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
