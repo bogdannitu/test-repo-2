@@ -2,65 +2,66 @@
     <div wire:loading.delay>
         Loading...
     </div>
-    @includeIf('app.backoffice.wheel.index.before_content')
+    @includeIf('app.backoffice.car.wheel.index.before_content')
+
     <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-7">
         <div class="inline-block min-w-full py-2 align-middle px-6 lg:px-8">
             <div class="overflow-hidden shadow rounded">
                 <table class="laragen-table">
                     <thead>
                     <tr>
-                                                                                @includeIf('app.backoffice.wheel.index.id_before_header')
+                                                                                @includeIf('app.backoffice.car.wheel.index.id_before_header')
                             <th>
                                 {{ trans('cruds.wheel.fields.id') }}                            </th>
-                            @includeIf('app.backoffice.wheel.index.id_after_header')
-                                                                                @includeIf('app.backoffice.wheel.index.color_before_header')
+                            @includeIf('app.backoffice.car.wheel.index.id_after_header')
+                                                                                @includeIf('app.backoffice.car.wheel.index.color_before_header')
                             <th>
                                 {{ trans('cruds.wheel.fields.color') }}                            </th>
-                            @includeIf('app.backoffice.wheel.index.color_after_header')
-                                                                                @includeIf('app.backoffice.wheel.index.size_before_header')
+                            @includeIf('app.backoffice.car.wheel.index.color_after_header')
+                                                                                @includeIf('app.backoffice.car.wheel.index.size_before_header')
                             <th>
                                 {{ trans('cruds.wheel.fields.size') }}                            </th>
-                            @includeIf('app.backoffice.wheel.index.size_after_header')
+                            @includeIf('app.backoffice.car.wheel.index.size_after_header')
                                                 <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
                     </thead>
                     <tbody>
                     @forelse($items as $item)
-                        @includeIf('app.backoffice.wheel.index.before_row', ['item' => $item])
+                        @includeIf('app.backoffice.car.wheel.index.before_row', ['item' => $item])
                         <tr>
-                                                                                            @includeIf('app.backoffice.wheel.fields.index.id_before_column')
+                                                                                            @includeIf('app.backoffice.car.wheel.fields.index.id_before_column')
                                 <td>
                                     @includeFirst(
                                         [
-                                            'app.backoffice.wheel.fields.index.id',
-                                            'app.generated.backoffice.wheel.fields.index.id'
+                                            'app.backoffice.car.wheel.fields.index.id',
+                                            'app.generated.backoffice.car.wheel.fields.index.id'
                                         ]
                                     )
-                                    @includeIf('app.backoffice.wheel.fields.index.id_after')
+                                    @includeIf('app.backoffice.car.wheel.fields.index.id_after')
                                 </td>
-                                @includeIf('app.backoffice.wheel.fields.index.id_after_column')
-                                                                                            @includeIf('app.backoffice.wheel.fields.index.color_before_column')
+                                @includeIf('app.backoffice.car.wheel.fields.index.id_after_column')
+                                                                                            @includeIf('app.backoffice.car.wheel.fields.index.color_before_column')
                                 <td>
                                     @includeFirst(
                                         [
-                                            'app.backoffice.wheel.fields.index.color',
-                                            'app.generated.backoffice.wheel.fields.index.color'
+                                            'app.backoffice.car.wheel.fields.index.color',
+                                            'app.generated.backoffice.car.wheel.fields.index.color'
                                         ]
                                     )
-                                    @includeIf('app.backoffice.wheel.fields.index.color_after')
+                                    @includeIf('app.backoffice.car.wheel.fields.index.color_after')
                                 </td>
-                                @includeIf('app.backoffice.wheel.fields.index.color_after_column')
-                                                                                            @includeIf('app.backoffice.wheel.fields.index.size_before_column')
+                                @includeIf('app.backoffice.car.wheel.fields.index.color_after_column')
+                                                                                            @includeIf('app.backoffice.car.wheel.fields.index.size_before_column')
                                 <td>
                                     @includeFirst(
                                         [
-                                            'app.backoffice.wheel.fields.index.size',
-                                            'app.generated.backoffice.wheel.fields.index.size'
+                                            'app.backoffice.car.wheel.fields.index.size',
+                                            'app.generated.backoffice.car.wheel.fields.index.size'
                                         ]
                                     )
-                                    @includeIf('app.backoffice.wheel.fields.index.size_after')
+                                    @includeIf('app.backoffice.car.wheel.fields.index.size_after')
                                 </td>
-                                @includeIf('app.backoffice.wheel.fields.index.size_after_column')
+                                @includeIf('app.backoffice.car.wheel.fields.index.size_after_column')
                                                         <td>
                                 <div class="form-group">
                                     
@@ -75,11 +76,11 @@
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['wheel' => $item->id]) }}"></x-laragen::button>                                    
                                                                                 <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
                                     @endif
-                                    @includeIf('app.backoffice.wheel.index.actions')
+                                    @includeIf('app.backoffice.car.wheel}.index.actions')
                                 </div>
                             </td>
                         </tr>
-                        @includeIf('app.backoffice.wheel.index.after_row', ['item' => $item])
+                        @includeIf('app.backoffice.car.wheel.index.after_row', ['item' => $item])
                         @empty
                         <tr>
                             <td colspan="10">No entries found.</td>
@@ -94,7 +95,7 @@
         </div>
     </div>
 
-    @includeIf('app.backoffice.wheel.index.after_content')
+    @includeIf('app.backoffice.car.wheel.index.after_content')
 </div>
 
     @push('scripts')
@@ -111,4 +112,4 @@
         </script>
     @endpush
 
-@includeIf('app.backoffice.wheel.index.footer')
+@includeIf('app.backoffice.car.wheel.index.footer')

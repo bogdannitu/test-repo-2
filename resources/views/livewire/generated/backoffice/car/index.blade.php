@@ -3,6 +3,7 @@
         Loading...
     </div>
     @includeIf('app.backoffice.car.index.before_content')
+
     <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-7">
         <div class="inline-block min-w-full py-2 align-middle px-6 lg:px-8">
             <div class="overflow-hidden shadow rounded">
@@ -60,7 +61,7 @@
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['car' => $item->id]) }}"></x-laragen::button>                                    
                                                                                 <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
                                     @endif
-                                    @includeIf('app.backoffice.car.index.actions')
+                                    @includeIf('app.backoffice.car}.index.actions')
                                 </div>
                             </td>
                         </tr>
