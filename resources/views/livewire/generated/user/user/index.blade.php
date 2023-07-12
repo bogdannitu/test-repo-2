@@ -9,35 +9,35 @@
                 <table class="laragen-table">
                     <thead>
                     <tr>
-                                                    @includeIf('app.user.user.index.id_before_header')
+                                                                                @includeIf('app.user.user.index.id_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.id') }}                            </th>
                             @includeIf('app.user.user.index.id_after_header')
-                                                    @includeIf('app.user.user.index.name_before_header')
+                                                                                @includeIf('app.user.user.index.name_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.name') }}                            </th>
                             @includeIf('app.user.user.index.name_after_header')
-                                                    @includeIf('app.user.user.index.email_before_header')
+                                                                                @includeIf('app.user.user.index.email_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.email') }}                            </th>
                             @includeIf('app.user.user.index.email_after_header')
-                                                    @includeIf('app.user.user.index.email_verified_at_before_header')
+                                                                                @includeIf('app.user.user.index.email_verified_at_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.email_verified_at') }}                            </th>
                             @includeIf('app.user.user.index.email_verified_at_after_header')
-                                                    @includeIf('app.user.user.index.password_before_header')
+                                                                                @includeIf('app.user.user.index.password_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.password') }}                            </th>
                             @includeIf('app.user.user.index.password_after_header')
-                                                    @includeIf('app.user.user.index.created_at_before_header')
+                                                                                @includeIf('app.user.user.index.created_at_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.created_at') }}                            </th>
                             @includeIf('app.user.user.index.created_at_after_header')
-                                                    @includeIf('app.user.user.index.updated_at_before_header')
+                                                                                @includeIf('app.user.user.index.updated_at_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.updated_at') }}                            </th>
                             @includeIf('app.user.user.index.updated_at_after_header')
-                                                    @includeIf('app.user.user.index.deleted_at_before_header')
+                                                                                @includeIf('app.user.user.index.deleted_at_before_header')
                             <th>
                                 {{ trans('cruds.user.fields.deleted_at') }}                            </th>
                             @includeIf('app.user.user.index.deleted_at_after_header')

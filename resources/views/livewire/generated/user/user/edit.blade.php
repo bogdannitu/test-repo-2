@@ -4,13 +4,13 @@
             
             <div class="flex-1 -mx-2">
                 @includeIf('app.user.user.edit.fieldset.default-fieldset-5.content_before')
-                                    @includeIf('app.user.user.fields.edit.name_before')
+                                                        @includeIf('app.user.user.fields.edit.name_before')
                     @includeFirst([
                         'app.user.user.fields.edit.name',
                         'app.generated.user.user.fields.edit.name'
                     ])
                     @includeIf('app.user.user.fields.edit.name_after')
-                                    @includeIf('app.user.user.fields.edit.email_before')
+                                                        @includeIf('app.user.user.fields.edit.email_before')
                     @includeFirst([
                         'app.user.user.fields.edit.email',
                         'app.generated.user.user.fields.edit.email'

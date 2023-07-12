@@ -4,19 +4,13 @@
             
             <div class="flex-1 -mx-2">
                 @includeIf('app.backoffice.car.edit.fieldset.default-fieldset-6.content_before')
-                                    @includeIf('app.backoffice.car.fields.edit.name_before')
+                                                        @includeIf('app.backoffice.car.fields.edit.name_before')
                     @includeFirst([
                         'app.backoffice.car.fields.edit.name',
                         'app.generated.backoffice.car.fields.edit.name'
                     ])
                     @includeIf('app.backoffice.car.fields.edit.name_after')
-                                    @includeIf('app.backoffice.car.fields.edit.carWheels_car_id_before')
-                    @includeFirst([
-                        'app.backoffice.car.fields.edit.car_id',
-                        'app.generated.backoffice.car.fields.edit.carWheels_car_id'
-                    ])
-                    @includeIf('app.backoffice.car.fields.edit.carWheels_car_id_after')
-                                @includeIf('app.backoffice.car.edit.fieldset.default-fieldset-6.content_after')
+                                                                            @includeIf('app.backoffice.car.edit.fieldset.default-fieldset-6.content_after')
             </div>
 
         </fieldset>

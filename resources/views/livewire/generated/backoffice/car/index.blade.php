@@ -9,31 +9,15 @@
                 <table class="laragen-table">
                     <thead>
                     <tr>
-                                                    @includeIf('app.backoffice.car.index.id_before_header')
+                                                                                @includeIf('app.backoffice.car.index.id_before_header')
                             <th>
                                 {{ trans('cruds.car.fields.id') }}                            </th>
                             @includeIf('app.backoffice.car.index.id_after_header')
-                                                    @includeIf('app.backoffice.car.index.created_at_before_header')
-                            <th>
-                                {{ trans('cruds.car.fields.created_at') }}                            </th>
-                            @includeIf('app.backoffice.car.index.created_at_after_header')
-                                                    @includeIf('app.backoffice.car.index.updated_at_before_header')
-                            <th>
-                                {{ trans('cruds.car.fields.updated_at') }}                            </th>
-                            @includeIf('app.backoffice.car.index.updated_at_after_header')
-                                                    @includeIf('app.backoffice.car.index.deleted_at_before_header')
-                            <th>
-                                {{ trans('cruds.car.fields.deleted_at') }}                            </th>
-                            @includeIf('app.backoffice.car.index.deleted_at_after_header')
-                                                    @includeIf('app.backoffice.car.index.name_before_header')
+                                                                                                                                                                                                                                                                    @includeIf('app.backoffice.car.index.name_before_header')
                             <th>
                                 {{ trans('cruds.car.fields.name') }}                            </th>
                             @includeIf('app.backoffice.car.index.name_after_header')
-                                                    @includeIf('app.backoffice.car.index.carWheels_car_id_before_header')
-                            <th>
-                                {{ trans('cruds.car.fields.carWheels') }}                            </th>
-                            @includeIf('app.backoffice.car.index.carWheels_car_id_after_header')
-                                                <th style="width: 120px">{{ trans('global.actions') }}</th>
+                                                                                                            <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
                     </thead>
                     <tbody>
