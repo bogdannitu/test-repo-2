@@ -13,10 +13,26 @@
                             <th>
                                 {{ trans('cruds.car.fields.id') }}                            </th>
                             @includeIf('app.backoffice.car.index.id_after_header')
+                                                    @includeIf('app.backoffice.car.index.created_at_before_header')
+                            <th>
+                                {{ trans('cruds.car.fields.created_at') }}                            </th>
+                            @includeIf('app.backoffice.car.index.created_at_after_header')
+                                                    @includeIf('app.backoffice.car.index.updated_at_before_header')
+                            <th>
+                                {{ trans('cruds.car.fields.updated_at') }}                            </th>
+                            @includeIf('app.backoffice.car.index.updated_at_after_header')
+                                                    @includeIf('app.backoffice.car.index.deleted_at_before_header')
+                            <th>
+                                {{ trans('cruds.car.fields.deleted_at') }}                            </th>
+                            @includeIf('app.backoffice.car.index.deleted_at_after_header')
                                                     @includeIf('app.backoffice.car.index.name_before_header')
                             <th>
                                 {{ trans('cruds.car.fields.name') }}                            </th>
                             @includeIf('app.backoffice.car.index.name_after_header')
+                                                    @includeIf('app.backoffice.car.index.carWheels_car_id_before_header')
+                            <th>
+                                {{ trans('cruds.car.fields.carWheels') }}                            </th>
+                            @includeIf('app.backoffice.car.index.carWheels_car_id_after_header')
                                                 <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
                     </thead>
@@ -35,6 +51,39 @@
                                     @includeIf('app.backoffice.car.fields.index.id_after')
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.id_after_column')
+                                                            @includeIf('app.backoffice.car.fields.index.created_at_before_column')
+                                <td>
+                                    @includeFirst(
+                                        [
+                                            'app.backoffice.car.fields.index.created_at',
+                                            'app.generated.backoffice.car.fields.index.created_at'
+                                        ]
+                                    )
+                                    @includeIf('app.backoffice.car.fields.index.created_at_after')
+                                </td>
+                                @includeIf('app.backoffice.car.fields.index.created_at_after_column')
+                                                            @includeIf('app.backoffice.car.fields.index.updated_at_before_column')
+                                <td>
+                                    @includeFirst(
+                                        [
+                                            'app.backoffice.car.fields.index.updated_at',
+                                            'app.generated.backoffice.car.fields.index.updated_at'
+                                        ]
+                                    )
+                                    @includeIf('app.backoffice.car.fields.index.updated_at_after')
+                                </td>
+                                @includeIf('app.backoffice.car.fields.index.updated_at_after_column')
+                                                            @includeIf('app.backoffice.car.fields.index.deleted_at_before_column')
+                                <td>
+                                    @includeFirst(
+                                        [
+                                            'app.backoffice.car.fields.index.deleted_at',
+                                            'app.generated.backoffice.car.fields.index.deleted_at'
+                                        ]
+                                    )
+                                    @includeIf('app.backoffice.car.fields.index.deleted_at_after')
+                                </td>
+                                @includeIf('app.backoffice.car.fields.index.deleted_at_after_column')
                                                             @includeIf('app.backoffice.car.fields.index.name_before_column')
                                 <td>
                                     @includeFirst(
@@ -46,6 +95,17 @@
                                     @includeIf('app.backoffice.car.fields.index.name_after')
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.name_after_column')
+                                                            @includeIf('app.backoffice.car.fields.index.carWheels_car_id_before_column')
+                                <td>
+                                    @includeFirst(
+                                        [
+                                            'app.backoffice.car.fields.index.carWheels_car_id',
+                                            'app.generated.backoffice.car.fields.index.carWheels_car_id'
+                                        ]
+                                    )
+                                    @includeIf('app.backoffice.car.fields.index.carWheels_car_id_after')
+                                </td>
+                                @includeIf('app.backoffice.car.fields.index.carWheels_car_id_after_column')
                                                         <td>
                                 <div class="form-group">
                                     
