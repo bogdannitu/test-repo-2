@@ -1,1 +1,1 @@
-@livewire('app.backoffice.car.wheel.create', ['car' => $car])
+92@livewire('app.backoffice.car.wheel.create', ['car' => $car])
