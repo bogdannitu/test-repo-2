@@ -14,7 +14,7 @@ trait CreateTrait
 {
     public Wheel $wheel;
 
-            public Car $Car;
+            public Car $car;
     
     
     public function mount(Wheel $wheel)
