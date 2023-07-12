@@ -2,7 +2,7 @@
     namespace App\Http\Livewire\Generated\Backoffice\Car\Wheel;
 
 use App\Models\Wheel;
-    use App\Model\Car;
+    use App\Models\Car;
         use Illuminate\Database\Eloquent\Collection;
 
 /**
