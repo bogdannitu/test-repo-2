@@ -2,7 +2,7 @@
 
         
         <table class="w-full show-table">
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.car.fields.id') }}                    </th>
                     <td>
@@ -16,49 +16,7 @@
                     </td>
                 </tr>
                 @includeIf('app.backoffice.car.fields.show.id_after')
-                                            <tr>
-                    <th class="text-left">
-                        {{ trans('cruds.car.fields.created_at') }}                    </th>
-                    <td>
-
-                        @includeFirst(
-                            [
-                            'app.backoffice.car.fields.show.created_at',
-                            'app.generated.backoffice.car.fields.show.created_at'
-                            ]
-                        )
-                    </td>
-                </tr>
-                @includeIf('app.backoffice.car.fields.show.created_at_after')
-                                            <tr>
-                    <th class="text-left">
-                        {{ trans('cruds.car.fields.updated_at') }}                    </th>
-                    <td>
-
-                        @includeFirst(
-                            [
-                            'app.backoffice.car.fields.show.updated_at',
-                            'app.generated.backoffice.car.fields.show.updated_at'
-                            ]
-                        )
-                    </td>
-                </tr>
-                @includeIf('app.backoffice.car.fields.show.updated_at_after')
-                                            <tr>
-                    <th class="text-left">
-                        {{ trans('cruds.car.fields.deleted_at') }}                    </th>
-                    <td>
-
-                        @includeFirst(
-                            [
-                            'app.backoffice.car.fields.show.deleted_at',
-                            'app.generated.backoffice.car.fields.show.deleted_at'
-                            ]
-                        )
-                    </td>
-                </tr>
-                @includeIf('app.backoffice.car.fields.show.deleted_at_after')
-                                            <tr>
+                                                                                                                                                                        <tr>
                     <th class="text-left">
                         {{ trans('cruds.car.fields.name') }}                    </th>
                     <td>
@@ -72,21 +30,7 @@
                     </td>
                 </tr>
                 @includeIf('app.backoffice.car.fields.show.name_after')
-                                            <tr>
-                    <th class="text-left">
-                        {{ trans('cruds.car.fields.carWheels') }}                    </th>
-                    <td>
-
-                        @includeFirst(
-                            [
-                            'app.backoffice.car.fields.show.carWheels_car_id',
-                            'app.generated.backoffice.car.fields.show.carWheels_car_id'
-                            ]
-                        )
-                    </td>
-                </tr>
-                @includeIf('app.backoffice.car.fields.show.carWheels_car_id_after')
-                    </table>
+                                                        </table>
     </div>
 
 @includeIf('app.backoffice.car.show.footer')

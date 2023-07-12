@@ -2,7 +2,7 @@
 
         
         <table class="w-full show-table">
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.id') }}                    </th>
                     <td>
@@ -16,7 +16,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.id_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.name') }}                    </th>
                     <td>
@@ -30,7 +30,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.name_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.email') }}                    </th>
                     <td>
@@ -44,7 +44,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.email_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.email_verified_at') }}                    </th>
                     <td>
@@ -58,7 +58,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.email_verified_at_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.password') }}                    </th>
                     <td>
@@ -72,7 +72,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.password_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.created_at') }}                    </th>
                     <td>
@@ -86,7 +86,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.created_at_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.updated_at') }}                    </th>
                     <td>
@@ -100,7 +100,7 @@
                     </td>
                 </tr>
                 @includeIf('app.user.user.fields.show.updated_at_after')
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
                         {{ trans('cruds.user.fields.deleted_at') }}                    </th>
                     <td>
