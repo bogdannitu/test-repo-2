@@ -2,6 +2,7 @@
     namespace App\Http\Livewire\Generated\Backoffice\Car\Wheel;
 
 use App\Models\Wheel;
+    use App\Model\Car;
         use Illuminate\Database\Eloquent\Collection;
 
 /**
@@ -13,6 +14,8 @@ trait CreateTrait
 {
     public Wheel $wheel;
 
+            public Car $Car;
+    
     
     public function mount(Wheel $wheel)
     {
@@ -28,7 +31,8 @@ trait CreateTrait
     {
         $this->validate();
 
-                    $this->wheel->save();
+                    $this->wheel->car()->associate($this->car);
+            $this->wheel->save();
         
         
         return redirect()->route('laragen.admin.car.index');

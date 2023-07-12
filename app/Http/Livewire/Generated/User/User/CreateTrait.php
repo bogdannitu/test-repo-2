@@ -14,6 +14,7 @@ trait CreateTrait
     public User $user;
 
     
+    
     public function mount(User $user)
     {
         $this->user = $user;
