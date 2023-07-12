@@ -35,8 +35,8 @@ trait CreateTrait
             $this->wheel->save();
         
         
-        return redirect()->route('laragen.admin.car.index');
-    }
+                    return redirect()->route('laragen.admin.car.show', ['car' => $this->car]);
+            }
 
     public function rules(): array
     {
