@@ -15,15 +15,8 @@ trait IndexTrait
             use \Hehecoding\LaragenUiKit\Traits\WithConfirmation;
         public int $perPage = 10;
 
-    public bool $hideDefaultActions = false;
-
-    public bool $hideEditAction = false;
-
-    public bool $hideShowAction = false;
-
-    public bool $hideDeleteAction = false;
-
-    public function render()
+            public bool $hideDefaultActions = false;
+        public function render()
     {
                     return view('livewire.generated.backoffice.car.index', [
                 'items' => $this->getQuery()

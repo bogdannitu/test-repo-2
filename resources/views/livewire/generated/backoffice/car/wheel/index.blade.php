@@ -68,25 +68,15 @@
                                     @if(!$hideDefaultActions)
 
                                     
-                                        @if(!$hideShowAction)
-
                                         
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.car.show', ['wheel' => $item->id]) }}"></x-laragen::button>
-                                        @endif
-
                                     
                                     
-                                        @if(!$hideEditAction)
-
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['wheel' => $item->id]) }}"></x-laragen::button>
-                                        @endif
-                                    
-                                                                            @if(!$hideDeleteAction)
-                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                        @endif
-                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['wheel' => $item->id]) }}"></x-laragen::button>                                    
+                                                                                <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
                                     @endif
-                                    @includeIf('app.backoffice.car.wheel.index.actions')
+                                    @includeIf('app.backoffice.car.wheel}.index.actions')
                                 </div>
                             </td>
                         </tr>
