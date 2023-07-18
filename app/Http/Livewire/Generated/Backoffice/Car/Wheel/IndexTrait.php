@@ -14,7 +14,7 @@ trait IndexTrait
 {
             use \Hehecoding\LaragenUiKit\Traits\WithConfirmation;
         public int $perPage = 10;
-//asdasdasd
+
             public bool $hideEditAction = true;
 
         public bool $hideShowAction = true;

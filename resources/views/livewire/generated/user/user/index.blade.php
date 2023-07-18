@@ -149,7 +149,7 @@
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.users.show', ['user' => $item->id]) }}"></x-laragen::button>
                                         @endif
 
-                                                                            asdasdasdasdasdasdasdasdasd
+                                    
                                     
                                         @if(!$hideEditAction)
 
