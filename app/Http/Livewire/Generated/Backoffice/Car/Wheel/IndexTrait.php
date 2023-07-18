@@ -15,7 +15,7 @@ trait IndexTrait
             use \Hehecoding\LaragenUiKit\Traits\WithConfirmation;
         public int $perPage = 10;
 
-            public bool $hideDefaultActions = true;
+            public bool $hideDefaultActions = false;
         public function render()
     {
                     return view('livewire.generated.backoffice.car.wheel.index', [
