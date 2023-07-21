@@ -30,8 +30,8 @@ trait EditTrait
 
         $this->user->save();
         
-        return redirect()->route('laragen.admin.users.index');
-    }
+                    return redirect()->route('laragen.admin.users.index');
+            }
 
     public function rules(): array
     {

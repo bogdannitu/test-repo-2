@@ -30,8 +30,8 @@ trait EditTrait
 
         $this->car->save();
         
-        return redirect()->route('laragen.admin.car.index');
-    }
+                    return redirect()->route('laragen.admin.car.index');
+            }
 
     public function rules(): array
     {
