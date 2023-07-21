@@ -4,11 +4,6 @@
     </div>
     @includeIf('app.backoffice.car.wheel.index.before_content')
 
-    <x-slot name="activator">
-        <x-laragen::button type="button" @click="open = true" variant="plain" size="sm" icon="fa-light fa-edit">
-        </x-laragen::button>
-    </x-slot>
-
     <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-7">
         <div class="inline-block min-w-full py-2 align-middle px-6 lg:px-8">
             <div class="overflow-hidden shadow rounded">
@@ -68,32 +63,30 @@
                                 </td>
                                 @includeIf('app.backoffice.car.wheel.fields.index.size_after_column')
                                                         <td>
-                                <div class="form-group">
-
-                                    <x-laragen::modal title="Edit" hideActions="true">
-                                        @livewire('app.backoffice.car.wheel.edit', ['wheel' => $item])
-                                    </x-laragen::modal>
-
+                                <div class="form-group flex">
+                                    
                                     @if(!$hideDefaultActions)
 
-
+                                    
                                         @if(!$hideShowAction)
 
-
+                                        
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.car.show', ['wheel' => $item->id]) }}"></x-laragen::button>
                                         @endif
 
-
-
+                                    
+                                    
                                         @if(!$hideEditAction)
 
-
+                                        
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['wheel' => $item->id]) }}"></x-laragen::button>
                                         @endif
+                                    
+                                    EDIT
 
                                                                             @if(!$hideDeleteAction)
                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                        @endif
-
+                                    
                                     @endif
                                     @includeIf('app.backoffice.car.wheel.index.actions')
                                 </div>

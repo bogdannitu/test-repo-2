@@ -48,7 +48,7 @@
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.name_after_column')
                                                                                                                             <td>
-                                <div class="form-group">
+                                <div class="form-group flex">
                                     
                                     @if(!$hideDefaultActions)
 
@@ -67,6 +67,8 @@
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['car' => $item->id]) }}"></x-laragen::button>
                                         @endif
                                     
+                                    EDIT
+
                                                                             @if(!$hideDeleteAction)
                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                        @endif
                                     
