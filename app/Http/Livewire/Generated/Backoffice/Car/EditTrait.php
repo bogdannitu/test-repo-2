@@ -14,7 +14,6 @@ trait EditTrait
     public Car $car;
 
     
-    
     public function mount(Car $car)
     {
         $this->car = $car;

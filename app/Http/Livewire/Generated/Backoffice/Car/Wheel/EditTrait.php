@@ -13,8 +13,6 @@ trait EditTrait
 {
     public Wheel $wheel;
 
-            public Car $car;
-    
     
     public function mount(Wheel $wheel)
     {
