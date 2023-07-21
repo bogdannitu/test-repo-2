@@ -30,7 +30,7 @@ trait EditTrait
 
         $this->wheel->save();
         
-                    return redirect()->route('laragen.admin.car.show', ['car' => $this->car]);
+                    return redirect()->route('laragen.admin.car.show', ['car' => $this->wheel->car]);
             }
 
     public function rules(): array
