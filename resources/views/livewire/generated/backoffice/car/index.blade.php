@@ -61,10 +61,10 @@
 
                                     
                                     
-                                            <x-laragen::modal title="Edit" hideActions="true">                                                <x-slot name="activator">                                                    <x-laragen::button type="button" @click="open = true" variant="text" size="xs" icon="fa-light fa-edit">                                                    </x-laragen::button>                                                </x-slot>                                                @livewire('app.backoffice.car.edit', ['car' => $item])
-                                            </x-laragen::modal>
                                         @if(!$hideEditAction)
 
+                                                <x-laragen::modal title="Edit" hideActions="true">                                                <x-slot name="activator">                                                <x-laragen::button type="button" @click="open = true" variant="text" size="xs" icon="fa-light fa-edit">                                                </x-laragen::button>                                                </x-slot>                                                @livewire('app.backoffice.car.edit', ['car' => $item])
+                                                </x-laragen::modal>
                                         
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['car' => $item->id]) }}"></x-laragen::button>
                                         @endif
