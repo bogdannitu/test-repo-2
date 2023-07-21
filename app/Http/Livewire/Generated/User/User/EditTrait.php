@@ -21,8 +21,8 @@ trait EditTrait
 
     public function render()
     {
-        return view('livewire.generated.user.user.edit');
-    }
+                    return view('livewire.generated.user.user.edit');
+            }
 
     public function submit()
     {

@@ -21,8 +21,8 @@ trait EditTrait
 
     public function render()
     {
-        return view('livewire.generated.backoffice.wheel.edit');
-    }
+                    return view('livewire.generated.backoffice.car.wheel.edit');
+            }
 
     public function submit()
     {
