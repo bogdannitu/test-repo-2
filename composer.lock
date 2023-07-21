@@ -898,16 +898,16 @@
         },
         {
             "name": "hehecoding/laragen-ui-kit",
-            "version": "1.9.2",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hehecoding/laragen-ui-kit.git",
-                "reference": "c0d0098899d0d91cfff16bae9e5696f9710a6e34"
+                "reference": "86ae20cea72d8032be3fef10c1d72f86fa5eb852"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hehecoding/laragen-ui-kit/zipball/c0d0098899d0d91cfff16bae9e5696f9710a6e34",
-                "reference": "c0d0098899d0d91cfff16bae9e5696f9710a6e34",
+                "url": "https://api.github.com/repos/hehecoding/laragen-ui-kit/zipball/86ae20cea72d8032be3fef10c1d72f86fa5eb852",
+                "reference": "86ae20cea72d8032be3fef10c1d72f86fa5eb852",
                 "shasum": ""
             },
             "require": {
@@ -963,9 +963,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/hehecoding/laragen-ui-kit/tree/1.9.2"
+                "source": "https://github.com/hehecoding/laragen-ui-kit/tree/1.9.3"
             },
-            "time": "2023-05-15T13:27:19+00:00"
+            "time": "2023-07-05T13:16:14+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8746,5 +8746,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
