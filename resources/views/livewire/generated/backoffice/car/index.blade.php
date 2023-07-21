@@ -63,9 +63,8 @@
                                     
                                         @if(!$hideEditAction)
 
-                                         
-                                        
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['car' => $item->id]) }}"></x-laragen::button>
+                                                                                     
+                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.car.edit', ['car' => $item->id]) }}"></x-laragen::button>                                        
                                         @endif
                                     
                                                                             @if(!$hideDeleteAction)
