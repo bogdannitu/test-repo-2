@@ -157,7 +157,7 @@
                                         <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.users.edit', ['user' => $item->id]) }}"></x-laragen::button>
                                         @endif
                                     
-                                    <x-laragen::modal title="Edit" hideActions="true"></x-laragen::modal>
+                                    <x-laragen::modal title="Edit" hideActions="true">                                        <x-slot>                                        </x-slot>                                    </x-laragen::modal>
                                                                             @if(!$hideDeleteAction)
                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                        @endif
                                     
