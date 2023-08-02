@@ -1,0 +1,1 @@
+{{ $car->has_driver }}

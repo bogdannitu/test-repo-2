@@ -17,7 +17,7 @@ trait CarTrait
                                                         $casts['created_at'] = 'datetime';
                                                 $casts['updated_at'] = 'datetime';
                                                 $casts['deleted_at'] = 'datetime';
-                                        
+                                                            
         return $casts;
     }
 
@@ -38,6 +38,7 @@ trait CarTrait
                             'updated_at',
                             'deleted_at',
                             'name',
+                            'has_driver',
                     ];
     }
 

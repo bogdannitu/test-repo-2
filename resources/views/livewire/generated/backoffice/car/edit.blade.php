@@ -10,7 +10,13 @@
                         'app.generated.backoffice.car.fields.edit.name'
                     ])
                     @includeIf('app.backoffice.car.fields.edit.name_after')
-                                                                            @includeIf('app.backoffice.car.edit.fieldset.default-fieldset-6.content_after')
+                                                                                                    @includeIf('app.backoffice.car.fields.edit.has_driver_before')
+                    @includeFirst([
+                        'app.backoffice.car.fields.edit.has_driver',
+                        'app.generated.backoffice.car.fields.edit.has_driver'
+                    ])
+                    @includeIf('app.backoffice.car.fields.edit.has_driver_after')
+                                @includeIf('app.backoffice.car.edit.fieldset.default-fieldset-6.content_after')
             </div>
 
         </fieldset>

@@ -18,7 +18,11 @@
                             <th>
                                 {{ trans('cruds.car.fields.name') }}                            </th>
                             @includeIf('app.backoffice.car.index.name_after_header')
-                                                                                                            <th style="width: 120px">{{ trans('global.actions') }}</th>
+                                                                                                                                            @includeIf('app.backoffice.car.index.has_driver_before_header')
+                            <th>
+                                {{ trans('cruds.car.fields.has_driver') }}                            </th>
+                            @includeIf('app.backoffice.car.index.has_driver_after_header')
+                                                <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -47,7 +51,18 @@
                                     @includeIf('app.backoffice.car.fields.index.name_after')
                                 </td>
                                 @includeIf('app.backoffice.car.fields.index.name_after_column')
-                                                                                                                            <td>
+                                                                                                                                                                @includeIf('app.backoffice.car.fields.index.has_driver_before_column')
+                                <td>
+                                    @includeFirst(
+                                        [
+                                            'app.backoffice.car.fields.index.has_driver',
+                                            'app.generated.backoffice.car.fields.index.has_driver'
+                                        ]
+                                    )
+                                    @includeIf('app.backoffice.car.fields.index.has_driver_after')
+                                </td>
+                                @includeIf('app.backoffice.car.fields.index.has_driver_after_column')
+                                                        <td>
                                 <div class="form-group flex">
                                     
                                     @if(!$hideDefaultActions)

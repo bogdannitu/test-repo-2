@@ -36,6 +36,8 @@ return [
                 'deleted_at_helper' => '',
                     'name' => 'Name',
                 'name_helper' => '',
+                    'has_driver' => 'Has driver',
+                'has_driver_helper' => '',
                     'carWheels' => 'Wheels',
                 'carWheels_helper' => '',
                     ],

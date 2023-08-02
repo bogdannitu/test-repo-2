@@ -44,6 +44,20 @@
                     </td>
                 </tr>
                 @includeIf('app.backoffice.car.fields.show.carWheels_car_id_after')
+                                                            <tr>
+                    <th class="text-left">
+                        {{ trans('cruds.car.fields.has_driver') }}                    </th>
+                    <td>
+
+                        @includeFirst(
+                            [
+                            'app.backoffice.car.fields.show.has_driver',
+                            'app.generated.backoffice.car.fields.show.has_driver'
+                            ]
+                        )
+                    </td>
+                </tr>
+                @includeIf('app.backoffice.car.fields.show.has_driver_after')
                     </table>
     </div>
 

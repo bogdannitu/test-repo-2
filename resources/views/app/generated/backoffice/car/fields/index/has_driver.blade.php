@@ -1,0 +1,1 @@
+{{ $item->has_driver }}
